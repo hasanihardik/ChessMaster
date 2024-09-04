@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Images/Icons/WebsiteIcon.png">
+
+    <title>Chess</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="Header">
+        <h1 style="display: inline;" class="headerTitle">Chess</h1>
+        <h2 class='name'>Hardik Hasani</h2>
+    </header>
+
+    <div class="Container">    
+        <div id="Board">     
+        </div>
+    </div>
+
+    <div class="buttonsContainer">
+        <button style='background: rgb(174, 174, 174); margin-left: 5vw; border:none; outline: none; border-radius: 5px; padding-top: 1vh;padding-bottom: 1vh; padding-left: 1vw;padding-right: 1vw; margin-top: -5px;'><a href="index.html" class="LinkItem" style='font-weight: 900; color: rgb(52, 52, 52); background: transparent; margin-left: 0; padding-left: 0;'> Play </a></button>
+        <button class="resignButton" onclick="resign()">Resign</button>
+        <button class="drawButton" onclick="drawGame()">Draw</button>
+    </div>
+
+    <div class="CapturedPiecesContainer">   
+        <div class="WhitePiecesCaptured">
+        </div>
+        <div class="BlackPiecesCaptured">
+        </div>
+    </div>
+
+    <nav style="background-color: #333; padding: 15px; display: flex; justify-content: center; align-items: center; border-radius: 10px;">
+        <ul class="footer-links" style="display: flex; justify-content: center; align-items: center; padding: 0; margin: 0; list-style: none;">
+            <li style="margin: 0 15px; transition: transform 0.3s;">
+                <a href="https://github.com/hasanihardik" target="_blank" style="text-decoration: none;">
+                    <img src="Images/Logo/githubLogo.jpg" width="40" style="vertical-align: middle; border-radius: 50%; border: 2px solid #fff; transition: transform 0.3s, border-color 0.3s;">
+                </a>
+            </li>
+            <li style="margin: 0 15px; transition: transform 0.3s;">
+                <a href="https://www.linkedin.com/in/hardikhasani/" target="_blank" style="text-decoration: none;">
+                    <img src="Images/Logo/linkedInLogo.png" width="40" style="vertical-align: middle; border-radius: 50%; border: 2px solid #fff; transition: transform 0.3s, border-color 0.3s;">
+                </a>
+            </li>
+            <li style="margin: 0 15px; transition: transform 0.3s;">
+                <a href="https://www.youtube.com/c/howtohardik" target="_blank" style="text-decoration: none;">
+                    <img src="Images/Logo/youtubeLogo.png" width="50" style="vertical-align: middle; border-radius: 50%; border: 2px solid #fff; transition: transform 0.3s, border-color 0.3s;">
+                </a>
+            </li>
+            <li style="margin: 0 15px; transition: transform 0.3s;">
+                <a href="https://hardiks-portfolio.vercel.app/" target="_blank" style="text-decoration: none;">
+                    <img src="Images/Logo/personalWebsite.png" width="40" style="vertical-align: middle; border-radius: 50%; border: 2px solid #fff; transition: transform 0.3s, border-color 0.3s;">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+
+    <script src="Scripts/Pieces.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/ComputerPlayer.js"></script>
+
+</body>
+
+</html>
